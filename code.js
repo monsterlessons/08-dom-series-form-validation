@@ -1,10 +1,9 @@
 function changeColor () {
-  var element = document.getElementById('paragraph')
-  console.log(
-    'Clicked on button',
-    element.style
-  )
+  var elements = document.getElementsByClassName('article')
+  console.log(elements)
 
-  element.style.color = 'red'
-  element.style.fontSize = '24px'
+
+  for(var i = 0; i < elements.length; i++) {
+    elements[i].style.color = 'red'
+  }
 }
