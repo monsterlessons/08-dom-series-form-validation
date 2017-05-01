@@ -1,9 +1,9 @@
 function changeColor () {
-  var elements = document.getElementsByClassName('article')
-  console.log(elements)
+  var elements = document.querySelectorAll(
+    '.container input[type="checkbox"]:checked'
+  )
 
-
-  for(var i = 0; i < elements.length; i++) {
-    elements[i].style.color = 'red'
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].parentElement.style.color = 'red'
   }
 }
