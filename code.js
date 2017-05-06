@@ -1,9 +1,10 @@
 function changeColor () {
-  var elements = document.querySelectorAll(
-    '.container input[type="checkbox"]:checked'
-  )
+  var elements = document.querySelectorAll('.drinks li')
+  var drinks = []
 
   for (var i = 0; i < elements.length; i++) {
-    elements[i].parentElement.style.color = 'red'
+    var content = elements[i].innerHTML.trim()
+    drinks.push(content)
   }
+  console.log(drinks)
 }
