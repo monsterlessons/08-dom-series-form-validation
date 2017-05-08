@@ -1,10 +1,20 @@
-function changeColor () {
-  var elements = document.querySelectorAll('.drinks li')
-  var drinks = []
+// var changeButton = document.querySelector('.change')
+//
+// changeButton.addEventListener('click', function () {
+//   console.log('we clicked')
+// })
+//
+// changeButton.addEventListener('click', function () {
+//   console.log('we clicked 2')
+// })
 
-  for (var i = 0; i < elements.length; i++) {
-    var content = elements[i].innerHTML.trim()
-    drinks.push(content)
-  }
-  console.log(drinks)
-}
+var firstElement = document.querySelector('.firstElement')
+var secondElement = document.querySelector('.secondElement')
+
+firstElement.addEventListener('mouseover', function () {
+  secondElement.style.display = 'block'
+})
+
+firstElement.addEventListener('mouseout', function () {
+  secondElement.style.display = 'none'
+})
