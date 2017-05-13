@@ -1,20 +1,8 @@
-// var changeButton = document.querySelector('.change')
-//
-// changeButton.addEventListener('click', function () {
-//   console.log('we clicked')
-// })
-//
-// changeButton.addEventListener('click', function () {
-//   console.log('we clicked 2')
-// })
+var app = document.querySelector('.app')
+var title = document.createElement('div')
+title.className = 'title'
+title.innerHTML = 'This is the title of news'
 
-var firstElement = document.querySelector('.firstElement')
-var secondElement = document.querySelector('.secondElement')
+app.insertBefore(title, app.firstChild)
 
-firstElement.addEventListener('mouseover', function () {
-  secondElement.style.display = 'block'
-})
-
-firstElement.addEventListener('mouseout', function () {
-  secondElement.style.display = 'none'
-})
+title.remove()
