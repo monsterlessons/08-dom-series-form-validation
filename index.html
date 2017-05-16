@@ -3,11 +3,54 @@
       <title>Test</title>
   </head>
   <body>
-    <div class='app'>
-      <div class='content'>
-        This is content for our news
+    <form class='formWithValidation'>
+      <div>
+        <div>
+          <label>From:</label>
+        </div>
+        <div>
+          <input type='text' class='from field'/>
+        </div>
       </div>
-    </div>
+      <div>
+        <div>
+          <label>Password:</label>
+        </div>
+        <div>
+          <input type='password' class='password field'/>
+        </div>
+      </div>
+      <div>
+        <div>
+          <label>Password confirmation:</label>
+        </div>
+        <div>
+          <input type='password' class='passwordConfirmation field'/>
+        </div>
+      </div>
+      <div>
+        <div>
+          <label>Where:</label>
+        </div>
+        <div>
+          <select class='where field'>
+            <option></option>
+            <option value='developers'>Developers</option>
+            <option value='managers'>Managers</option>
+            <option value='devops'>DevOps</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <div>
+          <label>Message:</label>
+        </div>
+        <div>
+          <textarea class='message field'></textarea>
+        </div>
+      </div>
+      <input type='submit' class='validateBtn' value='Validate' />
+    </form>
     <script src='code.js'></script>
   </body>
 </html>
